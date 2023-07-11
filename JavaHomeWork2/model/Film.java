@@ -1,23 +1,18 @@
 package model;
 
+import java.util.List;
+
 public class Film {
     private String name;
     private int year;
     private String director;
     private double imdb;
-    private Category[] categoryArray;
+    private List<Category> categoryArray;
     private String time;
-    private Platform[] platformList;
+    private List<Platform> platformList;
 
-    public Film(String name, int year, String director, double imdb, Category[] categoryArray, String time,
-            Platform[] platformList) {
-        this.name = name;
-        this.year = year;
-        this.director = director;
-        this.imdb = imdb;
-        this.categoryArray = categoryArray;
-        this.time = time;
-        this.platformList = platformList;
+    public Film() {
+
     }
 
     public String getName() {
@@ -52,12 +47,14 @@ public class Film {
         this.imdb = imdb;
     }
 
-    public Category[] getCategoryArray() {
+    public List<Category> getCategoryArray() {
         return this.categoryArray;
     }
 
-    public void setCategoryArray(Category[] categoryArray) {
-        this.categoryArray = categoryArray;
+    public void setCategoryArray(Category categoryArray) {
+        // this.categoryArray = categoryArray;
+        this.categoryArray.add(categoryArray);
+
     }
 
     public String getTime() {
@@ -68,11 +65,11 @@ public class Film {
         this.time = time;
     }
 
-    public Platform[] getPlatformList() {
+    public List<Platform> getPlatformList() {
         return this.platformList;
     }
 
-    public void setPlatformList(Platform[] platformList) {
+    public void setPlatformList(List<Platform> platformList) {
         this.platformList = platformList;
     }
 
