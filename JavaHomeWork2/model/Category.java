@@ -12,11 +12,17 @@ public class Category {
         return this.filmCount;
     }
 
-    public void setFilmCount(int filmCount) {
-        this.filmCount = filmCount;
+    public void setFilmCount() {
+        this.filmCount++;
     }
 
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
+
 }

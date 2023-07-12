@@ -11,4 +11,8 @@ public class Platform {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

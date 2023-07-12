@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Film {
@@ -7,9 +8,11 @@ public class Film {
     private int year;
     private String director;
     private double imdb;
-    private List<Category> categoryArray;
+    private List<Category> categoryList = new ArrayList<>();
+    private List<Platform> platformList = new ArrayList<>();
+    // private List<Category> categoryList;
     private String time;
-    private List<Platform> platformList;
+    // private List<Platform> platformList;
 
     public Film() {
 
@@ -47,13 +50,13 @@ public class Film {
         this.imdb = imdb;
     }
 
-    public List<Category> getCategoryArray() {
-        return this.categoryArray;
+    public List<Category> getCategoryList() {
+        return this.categoryList;
     }
 
-    public void setCategoryArray(Category categoryArray) {
-        // this.categoryArray = categoryArray;
-        this.categoryArray.add(categoryArray);
+    public void setCategoryList(Category category) {
+        // this.categoryList = category;
+        this.categoryList.add(category);
 
     }
 
@@ -69,8 +72,21 @@ public class Film {
         return this.platformList;
     }
 
-    public void setPlatformList(List<Platform> platformList) {
-        this.platformList = platformList;
+    public void setPlatformList(Platform platform) {
+        this.platformList.add(platform);
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                " name='" + getName() + "'" +
+                ", year='" + getYear() + "'" +
+                ", director='" + getDirector() + "'" +
+                ", imdb='" + getImdb() + "'" +
+                ", categoryList='" + getCategoryList() + "'" +
+                ", time='" + getTime() + "'" +
+                ", platformList='" + getPlatformList() + "'" +
+                "}";
     }
 
 }
