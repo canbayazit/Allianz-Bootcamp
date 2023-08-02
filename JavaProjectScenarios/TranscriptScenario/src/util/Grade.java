@@ -4,8 +4,8 @@ package util;
 // for (Grade grade : Grade.values()) {
 //            System.out.println(grade);
 // }
-//Grade.values() => values() metodu enumdaki değerleri döner.
-public enum GradeTypeEnum {
+//Grade.values() => values() metodu enumdaki constant'lardan oluşan bir array döner.
+public enum Grade {
     A("A", 4), // constant
     B("B", 3), // constant
     C("C", 2), // constant
@@ -49,7 +49,7 @@ public enum GradeTypeEnum {
     // ediliyor. Sonra bu değişkenlere encapsulation yaparak get metodu aracılığıyla dışardan ulaşıyoruz.
     // Aslında ulaştığımız değer enum sabitimize girdiğimiz değere denk olduğu için enum sabiti'nin değerine
     // ulaşmış oluyoruz.
-    GradeTypeEnum(String stringValue, int numericValue) {
+    Grade(String stringValue, int numericValue) {
         this.stringValue = stringValue;
         this.numericValue = numericValue;
     }

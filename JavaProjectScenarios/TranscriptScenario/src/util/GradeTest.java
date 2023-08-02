@@ -2,7 +2,7 @@ package util;
 
 public class GradeTest {
     public static void main(String[] args) {
-        for (GradeTypeEnum grade : GradeTypeEnum.values()) {
+        for (Grade grade : Grade.values()) {
             System.out.println(grade);
         }
     }
