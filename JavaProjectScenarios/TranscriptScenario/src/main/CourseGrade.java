@@ -78,6 +78,10 @@ public class CourseGrade {
         }
     }
 
+    public Grade getGradeTaken() {
+        return gradeTaken;
+    }
+
     // setGradeTaken methodları overloading yapıldı.
     public void setGradeTaken(double val) {
         if (val >= 0.0 && val <= 4.0) {
@@ -90,8 +94,8 @@ public class CourseGrade {
 
     public void setGradeTaken(Grade g) {
             this.gradeTaken = g;
-
     }
+
     @Override
     public String toString() {
         return "Department: " + courseDepartment +
