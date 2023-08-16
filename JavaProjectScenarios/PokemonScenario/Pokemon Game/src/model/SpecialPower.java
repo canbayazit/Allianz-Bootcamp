@@ -34,4 +34,13 @@ public class SpecialPower {
     public void setRemainRight(int remainRight) {
         this.remainRight = remainRight;
     }
+
+    @Override
+    public String toString() {
+        return "SpecialPower{" +
+                "name='" + name + '\'' +
+                ", extraDamage=" + extraDamage +
+                ", remainRight=" + remainRight +
+                '}';
+    }
 }

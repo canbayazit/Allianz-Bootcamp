@@ -72,6 +72,7 @@ public class Pokemon {
                 ", health=" + health +
                 ", damage=" + damage +
                 ", type=" + type +
+                ", specialPower=" + specialPower +
                 '}';
     }
 }
