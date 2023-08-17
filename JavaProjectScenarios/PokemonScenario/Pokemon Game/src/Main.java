@@ -1,3 +1,5 @@
+
+import service.BattleService;
 /*
 *   POKEMON GAME SENARYO:
 *
@@ -42,7 +44,7 @@
 * */
 public class Main {
     public static void main(String[] args) {
-
-        System.out.println("Hello world!");
+        BattleService battleService = new BattleService();
+        battleService.startGame();
     }
 }
