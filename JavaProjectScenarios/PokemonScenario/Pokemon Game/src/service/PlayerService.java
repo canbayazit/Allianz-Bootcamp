@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class PlayerService {
+    // Console'da oyuna başlamadan önce player object'i oluşturan metot
     public Player createPlayer(Scanner scanner,List<Character> characters, List<Pokemon> pokemons){
         System.out.println("Enter player's name:");
         String playerName = scanner.nextLine();
