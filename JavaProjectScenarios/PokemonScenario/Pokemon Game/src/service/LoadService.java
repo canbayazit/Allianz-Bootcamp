@@ -47,7 +47,7 @@ public class LoadService implements ILoadService {
         SpecialPower psychicPower = new PsychicPower("Psychic", 20, 1);
 
 
-        Pikachu pikachu = new Pikachu("Pikachu", 100, 7, TypeEnum.ELECTRIC, electricityPower);
+        Pokemon pikachu = new Pikachu("Pikachu", 100, 7, TypeEnum.ELECTRIC, electricityPower);
         Pokemon dragonite = new Dragonite("Dragonite", 100, 17, TypeEnum.DRAGON, dragonPower);
         Pokemon articuno = new Articuno("Articuno", 100, 15, TypeEnum.ICE, icePower);
         Pokemon bulbasaur = new Bulbasaur("Bulbasaur", 100, 6, TypeEnum.GRASS, grassPower);
@@ -58,18 +58,18 @@ public class LoadService implements ILoadService {
         Pokemon squirtle = new Squirtle("Squirtle", 100, 5, TypeEnum.WATER, waterPower);
         Pokemon zapdos = new Zapdos("Zapdos", 100, 17, TypeEnum.ELECTRIC, electricityPower);
 
-        List<Pokemon> pokemonArrayList = new ArrayList<>();
-        pokemonArrayList.add(pikachu);
-        pokemonArrayList.add(dragonite);
-        pokemonArrayList.add(articuno);
-        pokemonArrayList.add(bulbasaur);
-        pokemonArrayList.add(charizard);
-        pokemonArrayList.add(mew);
-        pokemonArrayList.add(mewtwo);
-        pokemonArrayList.add(moltres);
-        pokemonArrayList.add(squirtle);
-        pokemonArrayList.add(zapdos);
+        List<Pokemon> pokemonList = new ArrayList<>();
+        pokemonList.add(pikachu);
+        pokemonList.add(dragonite);
+        pokemonList.add(articuno);
+        pokemonList.add(bulbasaur);
+        pokemonList.add(charizard);
+        pokemonList.add(mew);
+        pokemonList.add(mewtwo);
+        pokemonList.add(moltres);
+        pokemonList.add(squirtle);
+        pokemonList.add(zapdos);
 
-        return pokemonArrayList;
+        return pokemonList;
     }
 }
