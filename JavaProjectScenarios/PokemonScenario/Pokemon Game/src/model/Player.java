@@ -4,7 +4,7 @@ public class Player {
     private String name;
     private Character character;
     private boolean isWinner;
-
+    private int activePokemonIndex = 0;
     private boolean isTurn;
 
     public Player(String name, Character character) {
@@ -45,12 +45,21 @@ public class Player {
         isWinner = winner;
     }
 
+    public int getActivePokemonIndex() {
+        return activePokemonIndex;
+    }
+
+    public void setActivePokemonIndex(int activePokemonIndex) {
+        this.activePokemonIndex = activePokemonIndex;
+    }
+
     @Override
     public String toString() {
         return "Player{" +
                 "name='" + name + '\'' +
                 ", character=" + character +
                 ", isWinner=" + isWinner +
+                ", activePokemonIndex=" + activePokemonIndex +
                 ", isTurn=" + isTurn +
                 '}';
     }
