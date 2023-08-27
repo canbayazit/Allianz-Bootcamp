@@ -19,7 +19,7 @@ public class Transcript {
     public void addCourseTaken(CourseGrade courseGrade) {
         if (courseGrade != null) {
             gradeList.add(courseGrade);
-           updateGPA();
+            updateGPA();
         } else {
             System.out.println("Error: Cannot add a null courseGrade.");
         }
