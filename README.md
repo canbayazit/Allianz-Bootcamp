@@ -32,6 +32,8 @@ This repository includes my Java, SQL, and Spring Boot projects developed during
 - Layered architecture (Controller, Service, Repository)  
 - Entity relationships with JPA/Hibernate  
 - CRUD operations with Generic and Abstract Layer Design
+- Specification ile dinamik filtreleme
+- Pagination ile sayfalama işlemleri
 - Best practices for backend development in real-world applications
 
 
