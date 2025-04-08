@@ -31,15 +31,15 @@ This repository includes my Java, SQL, and Spring Boot projects developed during
 - RESTful API design  
 - Layered architecture (Controller, Service, Repository)  
 - Entity relationships with JPA/Hibernate  
-- CRUD operations with Generic and Abstract Layer Design
-- Specification ile dinamik filtreleme
-- Pagination ile sayfalama işlemleri
+- CRUD operations with **Generic and Abstract Layer Design**
+- Dynamic filtering using **Specification** pattern
+- **Pagination** support for efficient data retrieval
 - Best practices for backend development in real-world applications
 - JWT-based Authentication & Authorization:
-   - Secure API access using custom JWTFilter, JWTUtil, and SecurityConfiguration
-   - Stateless session management with OncePerRequestFilter and AuthenticationManager
+   - Secure API access using custom **JWTFilter**, **JWTUtil**, and **SecurityConfiguration**
+   - Stateless session management with **OncePerRequestFilter** and **AuthenticationManager**
    - Role-based endpoint access (hasRole("user"), etc.)
-- Aspect-Oriented Programming (AOP) applied for cross-cutting concerns like logging, exception handling, and monitoring
+- **Aspect-Oriented Programming (AOP)** applied for cross-cutting concerns like logging, exception handling, and monitoring
 
 
 
