@@ -35,6 +35,11 @@ This repository includes my Java, SQL, and Spring Boot projects developed during
 - Specification ile dinamik filtreleme
 - Pagination ile sayfalama işlemleri
 - Best practices for backend development in real-world applications
+- JWT-based Authentication & Authorization:
+   - Secure API access using custom JWTFilter, JWTUtil, and SecurityConfiguration
+   - Stateless session management with OncePerRequestFilter and AuthenticationManager
+   - Role-based endpoint access (hasRole("user"), etc.)
+- Aspect-Oriented Programming (AOP) applied for cross-cutting concerns like logging, exception handling, and monitoring
 
 
 
